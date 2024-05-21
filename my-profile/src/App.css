@@ -1,0 +1,69 @@
+.contact-card{
+  width: 40%;
+  height: 70%;
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  text-align: center;
+}
+
+.options-card{
+  width: 20%;
+  height: 50%;
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+}
+
+.content-card{
+  width: 100%;
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  overflow-y: auto;
+}
+
+.app{
+  display: flex;
+  justify-content: space-around;
+  height: 100vh;
+  background: linear-gradient(135deg, #f3e5f5, #e1bee7);
+}
+
+.contact-card , .content-card, .options-card{
+  margin: 50px;
+}
+
+@media (max-width: 768px) {
+  .app {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-card, .options-card, .content-card {
+    width: 90%;
+    height: 100vh;
+    overflow-y: auto;
+  }
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin: 10px;
+}
+
+.icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.info {
+  font-size: 15px;
+  font-family: arial;
+  font-weight: 600;
+}
