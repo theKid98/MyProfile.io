@@ -5,17 +5,17 @@ import ContentCard from './components/ContentCard';
 import OptionsCard from './components/OptionsCard';
 
 function App() {
-  const [selected, setSelected] = useState(null);
+  const [selectedOption, setSelectedOption] = useState('about');
   return (
     <div className='app'>
       <div className='contact-card'>
         <ContactsCard />
       </div>
       <div className='content-card'>
-        <ContentCard selected={selected} />
+        <ContentCard selectedOption={selectedOption} />
       </div>
       <div className='options-card'>
-        <OptionsCard setSelected={setSelected} />
+        <OptionsCard selectedOption={selectedOption} setSelectedOption={setSelectedOption} />
       </div>
     </div>
   );
